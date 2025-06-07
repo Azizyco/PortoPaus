@@ -1,0 +1,278 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-lg);
+  line-height: 1.1;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.hero__visual {
+  position: relative;
+}
+
+.hero__image-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  height: 600px;
+}
+
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  bottom: -10%;
+  width: 100%;
+  height: auto;
+}
+
+.hero__shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.2;
+  border: 2px solid var(--accent);
+}
+
+.shape--circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: -20px;
+  right: 20%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape--square {
+  width: 40px;
+  height: 40px;
+  bottom: 30%;
+  left: -20px;
+  animation: rotate 10s linear infinite;
+}
+
+.shape--triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid var(--accent);
+  background: none;
+  bottom: 10%;
+  right: -20px;
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.shape--plus {
+  width: 30px;
+  height: 30px;
+  top: 40%;
+  right: 10%;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.shape--plus::before,
+.shape--plus::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accent);
+}
+
+.shape--plus::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.shape--plus::after {
+  width: 2px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Background Math Elements */
+.hero__bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.math-element {
+  position: absolute;
+  font-family: 'Times New Roman', serif;
+  color: var(--accent);
+  opacity: 0.05;
+  font-weight: bold;
+  user-select: none;
+}
+
+.math-element--1 {
+  font-size: 200px;
+  top: 10%;
+  left: 5%;
+  animation: float 10s ease-in-out infinite;
+}
+
+.math-element--2 {
+  font-size: 150px;
+  bottom: 15%;
+  left: 10%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.math-element--3 {
+  font-size: 180px;
+  top: 20%;
+  right: 10%;
+  animation: float 12s ease-in-out infinite;
+}
+
+.math-element--4 {
+  font-size: 160px;
+  bottom: 20%;
+  right: 15%;
+  animation: float 9s ease-in-out infinite reverse;
+}
+
+.math-element--5 {
+  font-size: 220px;
+  top: 40%;
+  right: 5%;
+  animation: float 11s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero__text {
+    order: 2;
+  }
+  
+  .hero__visual {
+    order: 1;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .hero__subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero__buttons {
+    justify-content: center;
+  }
+  
+  .hero__title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.3rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-sm);
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .math-element {
+    font-size: 120px;
+  }
+}

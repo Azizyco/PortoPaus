@@ -1,0 +1,66 @@
+:root {
+  /* Dark Mode Colors */
+  --dark-bg: #0D0D0D;
+  --dark-text: #FFFFFF;
+  --dark-text-secondary: #AAAAAA;
+  --dark-accent: #6A0DAD;
+  --dark-accent-light: #9B30FF;
+  --dark-accent-dark: #4B0082;
+  --dark-surface: #1A1A1A;
+  --dark-border: #333333;
+  
+  /* Light Mode Colors */
+  --light-bg: #FFFFFF;
+  --light-text: #000000;
+  --light-text-secondary: #555555;
+  --light-accent: #D3B4FF;
+  --light-accent-light: #EAE0FF;
+  --light-accent-dark: #9B71D3;
+  --light-surface: #F5F5F7;
+  --light-border: #E5E5E5;
+  
+  /* Default to Dark Mode */
+  --bg-color: var(--dark-bg);
+  --text-color: var(--dark-text);
+  --text-color-secondary: var(--dark-text-secondary);
+  --accent-color: var(--dark-accent);
+  --accent-color-light: var(--dark-accent-light);
+  --accent-color-dark: var(--dark-accent-dark);
+  --surface-color: var(--dark-surface);
+  --border-color: var(--dark-border);
+  
+  /* Common Colors */
+  --dark-color: #000000;
+  --dark-color-light: #333333;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Animation Speed */
+  --transition-slow: 0.5s;
+  --transition-medium: 0.3s;
+  --transition-fast: 0.15s;
+  
+  /* Z-index layers */
+  --z-back: -1;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Light Mode Class */
+body.light-mode {
+  --bg-color: var(--light-bg);
+  --text-color: var(--light-text);
+  --text-color-secondary: var(--light-text-secondary);
+  --accent-color: var(--light-accent-dark);
+  --accent-color-light: var(--light-accent);
+  --accent-color-dark: var(--light-accent-dark);
+  --surface-color: var(--light-surface);
+  --border-color: var(--light-border);
+}

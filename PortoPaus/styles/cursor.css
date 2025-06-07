@@ -1,0 +1,39 @@
+/* Custom Cursor Styles */
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  z-index: var(--z-fixed);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(57, 255, 20, 0.1);
+  border: 2px solid var(--accent);
+}
+
+body:hover .cursor-dot,
+body:hover .cursor-dot-outline {
+  opacity: 1;
+}
+
+/* Hide custom cursor on mobile and tablet */
+@media (max-width: 1024px) {
+  .cursor-dot,
+  .cursor-dot-outline {
+    display: none;
+  }
+}

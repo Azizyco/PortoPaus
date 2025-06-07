@@ -1,0 +1,122 @@
+/* Materials Section Styles */
+.materials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.materials__item {
+  display: flex;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  overflow: hidden;
+  position: relative;
+}
+
+.materials__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--accent);
+  opacity: 0.5;
+  transition: width var(--transition-medium);
+}
+
+.materials__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.materials__item:hover::before {
+  width: 100%;
+  opacity: 0.05;
+}
+
+.materials__icon {
+  margin-right: var(--space-md);
+  color: var(--accent);
+  transition: transform var(--transition-medium);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(57, 255, 20, 0.1);
+}
+
+.materials__item:hover .materials__icon {
+  transform: scale(1.1);
+}
+
+.materials__content {
+  flex-grow: 1;
+}
+
+.materials__title {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-xs);
+  transition: color var(--transition-fast);
+}
+
+.materials__item:hover .materials__title {
+  color: var(--accent);
+}
+
+.materials__description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+}
+
+.materials__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--accent);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.materials__link svg {
+  transition: transform var(--transition-fast);
+}
+
+.materials__link:hover {
+  color: var(--accent-light);
+}
+
+.materials__link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .materials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .materials__item {
+    padding: var(--space-md);
+  }
+  
+  .materials__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .materials__grid {
+    grid-template-columns: 1fr;
+  }
+}

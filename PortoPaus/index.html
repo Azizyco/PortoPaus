@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Pendidik Matematika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/cursor.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    <link rel="stylesheet" href="/styles/materials.css">
+    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/gallery.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/preloader.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader__content">
+        <div class="preloader__spinner"></div>
+        <div class="preloader__text">Loading</div>
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="#" class="logo">
+            <span class="logo__text">Pausian<span class="accent">Math</span></span>
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link active">Beranda</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">Tentang Saya</a></li>
+              <li class="nav__item"><a href="#portfolio" class="nav__link">Portofolio</a></li>
+              <li class="nav__item"><a href="#materials" class="nav__link">Materi</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+              <li class="nav__item"><a href="#gallery" class="nav__link">Galeri</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Kontak</a></li>
+            </ul>
+          </nav>
+          <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle__checkbox">
+            <label for="theme-toggle-checkbox" class="theme-toggle__label">
+              <span class="theme-toggle__icon"></span>
+            </label>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title" ><span class="accent">I'am </span>Pausian</h1>
+              <h4 >
+                A new student of UPI majoring in <span class="accent">mathematics education</span> 2025
+              </h4>
+              <p class="hero__subtitle">
+                Calon Pendidik matematika  untuk membuat matematika menjadi menarik dan mudah dipahami
+              </p>
+              <div class="hero__buttons">
+                <a href="#portfolio" class="btn btn--primary">Lihat Portofolio</a>
+                <a href="#contact" class="btn btn--outline">Hubungi Saya</a>
+              </div>
+            </div>
+            <div class="hero__visual">
+              <div class="hero__image-container">
+                <spline-viewer class="hero__image" url="https://prod.spline.design/wlGHQUukpROQ0kjV/scene.splinecode"></spline-viewer>
+              </div>
+              <div class="hero__shapes">
+                <div class="shape shape--circle"></div>
+                <div class="shape shape--square"></div>
+                <div class="shape shape--triangle"></div>
+                <div class="shape shape--plus"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__bg-elements">
+          <div class="math-element math-element--1">∫</div>
+          <div class="math-element math-element--2">π</div>
+          <div class="math-element math-element--3">∑</div>
+          <div class="math-element math-element--4">√</div>
+          <div class="math-element math-element--5">∞</div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Tentang Saya</h2>
+            
+          </div>
+          <div class="about__content">
+            <div class="about__image-container">
+              <img src="Paus.png" alt="Foto Profil" class="about__image">
+            </div>
+            <div class="about__text">
+              <h3 class="about__name">Fauziah Nur Fatimah.</h3>
+              <p class="about__bio">
+                Saya adalah Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae error alias ad, fuga repellendus perspiciatis..
+              </p>
+              <div class="about__details">
+                <div class="about__detail">
+                  <h4 class="about__detail-title">Pendidikan</h4>
+                  <ul class="about__list">
+                    <li>MA Lorem, ipsum dolor. - MBOH (2018)</li>
+                    <li>MTS Lorem, ipsum. - MBOH (2015)</li>
+                    <li>SDIT Lorem, ipsum. - MBOH (2015)</li>
+                  </ul>
+                </div>
+                <div class="about__detail">
+                  <h4 class="about__detail-title">Pengalaman</h4>
+                  <ul class="about__list">
+                    <li>GTW (2018-sekarang)</li>
+                    <li>GTW (2015-2018)</li>
+                  </ul>
+                </div>
+                <div class="about__detail">
+                  <h4 class="about__detail-title">Sertifikasi</h4>
+                  <ul class="about__list">
+                    <li>Lorem ipsum dolor sit.gg (2019)</li>
+                    <li>Lorem, ipsum dolor. (2020)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Portofolio</h2>
+          </div>
+          <div class="portfolio__filter">
+            <button class="portfolio__filter-btn active" data-filter="all">Semua</button>
+            <button class="portfolio__filter-btn" data-filter="rpp">RPP</button>
+            <button class="portfolio__filter-btn" data-filter="media">Media Ajar</button>
+            <button class="portfolio__filter-btn" data-filter="video">Video</button>
+          </div>
+          <div class="portfolio__grid">
+            <!-- Portfolio Items -->
+            <div class="portfolio__item" data-category="rpp">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__item-image">
+                  <img src="https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg" alt="RPP Trigonometri">
+                </div>
+                <div class="portfolio__item-content">
+                  <h3 class="portfolio__item-title">----</h3>
+                  <p class="portfolio__item-description">
+                    ----.
+                  </p>
+                  <a href="#" class="portfolio__item-link">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item" data-category="media">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__item-image">
+                  <img src="https://images.pexels.com/photos/5905580/pexels-photo-5905580.jpeg" alt="Media Ajar Aljabar">
+                </div>
+                <div class="portfolio__item-content">
+                  <h3 class="portfolio__item-title">-----</h3>
+                  <p class="portfolio__item-description">
+                    ----.
+                  </p>
+                  <a href="#" class="portfolio__item-link">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item" data-category="video">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__item-image">
+                  <img src="https://images.pexels.com/photos/6238118/pexels-photo-6238118.jpeg" alt="Video Pembelajaran Kalkulus">
+                </div>
+                <div class="portfolio__item-content">
+                  <h3 class="portfolio__item-title">Video Pembelajaran Kalkulus</h3>
+                  <p class="portfolio__item-description">
+                    -----.
+                  </p>
+                  <a href="#" class="portfolio__item-link">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__item" data-category="rpp">
+              <div class="portfolio__item-inner">
+                <div class="portfolio__item-image">
+                  <img src="https://images.pexels.com/photos/5905702/pexels-photo-5905702.jpeg" alt="RPP Statistika">
+                </div>
+                <div class="portfolio__item-content">
+                  <h3 class="portfolio__item-title">----</h3>
+                  <p class="portfolio__item-description">
+                    ----.
+                  </p>
+                  <a href="#" class="portfolio__item-link">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials Section -->
+      <section id="materials" class="materials">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Materi</h2>
+          </div>
+          <div class="materials__grid">
+            <div class="materials__item">
+              <div class="materials__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="materials__content">
+                <h3 class="materials__title">===</h3>
+                <p class="materials__description">====.</p>
+                <a href="#" class="materials__link">
+                  <span>Download PDF</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="materials__item">
+              <div class="materials__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 8H19C20.1 8 21 8.9 21 10V20C21 21.1 20.1 22 19 22H5C3.9 22 3 21.1 3 20V4C3 2.9 3.9 2 5 2H13L18 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 16L14 12L10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="materials__content">
+                <h3 class="materials__title">===</h3>
+                <p class="materials__description">====.</p>
+                <a href="#" class="materials__link">
+                  <span>Lihat Presentasi</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="materials__item">
+              <div class="materials__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 7L16 12L23 17V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="materials__content">
+                <h3 class="materials__title">====</h3>
+                <p class="materials__description">=====.</p>
+                <a href="#" class="materials__link">
+                  <span>Tonton Video</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.752 11.168L10.752 8.168C10.5337 8.01072 10.2692 7.9289 10 7.9289C9.73077 7.9289 9.46631 8.01072 9.248 8.168C9.03025 8.32323 8.8583 8.54339 8.75498 8.79985C8.65167 9.0563 8.62148 9.33574 8.668 9.608L9.268 13.208C9.32156 13.5152 9.46512 13.7995 9.67967 14.0248C9.89422 14.2501 10.1685 14.4056 10.472 14.472L14.072 15.072C14.3442 15.1185 14.6237 15.0883 14.8801 14.985C15.1366 14.8817 15.3567 14.7097 15.512 14.492C15.6693 14.2737 15.7511 14.0092 15.7511 13.74C15.7511 13.4708 15.6693 13.2063 15.512 12.988L12.512 8.988C12.3567 8.77026 12.1366 8.59831 11.8801 8.49499C11.6237 8.39168 11.3442 8.36148 11.072 8.408L7.472 9.008C7.16478 9.06156 6.88048 9.20512 6.65521 9.41967C6.42994 9.63422 6.27439 9.9085 6.208 10.212L5.608 13.812C5.56148 14.0842 5.59168 14.3637 5.69499 14.6201C5.79831 14.8766 5.97026 15.0967 6.188 15.252C6.40631 15.4093 6.67077 15.4911 6.94 15.4911C7.20923 15.4911 7.47369 15.4093 7.692 15.252L11.692 12.252" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="materials__item">
+              <div class="materials__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="materials__content">
+                <h3 class="materials__title">====</h3>
+                <p class="materials__description">====.</p>
+                <a href="#" class="materials__link">
+                  <span>Download Worksheet</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Blog Edukasi</h2>
+          </div>
+          <div class="blog__grid">
+            <article class="blog__post">
+              <div class="blog__image">
+                <img src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg" alt="Strategi Mengajar Matematika">
+              </div>
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <span class="blog__date">12 Juni 2025</span>
+                  <span class="blog__category">Pendidikan</span>
+                </div>
+                <h3 class="blog__title">gtw</h3>
+                <p class="blog__excerpt">
+                  gwt
+                </p>
+                <a href="#" class="blog__link">Baca Selengkapnya</a>
+              </div>
+            </article>
+            <article class="blog__post">
+              <div class="blog__image">
+                <img src="https://images.pexels.com/photos/6238033/pexels-photo-6238033.jpeg" alt="Pembelajaran Jarak Jauh">
+              </div>
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <span class="blog__date">28 Mei 2025</span>
+                  <span class="blog__category">Metode</span>
+                </div>
+                <h3 class="blog__title">gtw</h3>
+                <p class="blog__excerpt">
+                  gtw.
+                </p>
+                <a href="#" class="blog__link">Baca Selengkapnya</a>
+              </div>
+            </article>
+            <article class="blog__post">
+              <div class="blog__image">
+                <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg" alt="Matematika dan kehidupan">
+              </div>
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <span class="blog__date">15 Mei 2025</span>
+                  <span class="blog__category">gtw</span>
+                </div>
+                <h3 class="blog__title">gtw</h3>
+                <p class="blog__excerpt">
+                  gtw.
+                </p>
+                <a href="#" class="blog__link">Baca Selengkapnya</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Galeri</h2>
+          </div>
+          <div class="gallery__slider">
+            <div class="gallery__slides">
+              <div class="gallery__slide active">
+                <img src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg" alt="Workshop Matematika Kreatif">
+                <div class="gallery__slide-caption">gtw</div>
+              </div>
+              <div class="gallery__slide">
+                <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg" alt="Kelas Matematika Interaktif">
+                <div class="gallery__slide-caption">gtw - 2023</div>
+              </div>
+              <div class="gallery__slide">
+                <img src="https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg" alt="Seminar Pendidikan">
+                <div class="gallery__slide-caption">gtw - 2022</div>
+              </div>
+            </div>
+            <div class="gallery__controls">
+              <button class="gallery__control gallery__control--prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="gallery__dots">
+                <span class="gallery__dot active"></span>
+                <span class="gallery__dot"></span>
+                <span class="gallery__dot"></span>
+              </div>
+              <button class="gallery__control gallery__control--next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Kontak</h2>
+            <p class="section-subtitle">Hubungi saya untuk kolaborasi atau konsultasi</p>
+          </div>
+          <div class="contact__content">
+            <div class="contact__info">
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92V19.92C22.0012 20.1985 21.9441 20.4742 21.832 20.7293C21.7199 20.9845 21.5553 21.2136 21.3491 21.4018C21.1428 21.5901 20.899 21.7335 20.6356 21.8227C20.3722 21.9119 20.0953 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3146 6.72533 15.2661 5.18999 12.85C3.49997 10.2412 2.44824 7.27097 2.11999 4.18C2.095 3.90555 2.12787 3.62956 2.2165 3.36718C2.30514 3.1048 2.44763 2.86214 2.63476 2.65638C2.82189 2.45061 3.0498 2.28646 3.30379 2.17453C3.55777 2.0626 3.83233 2.00502 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.4813C8.80173 2.79553 9.04207 3.2312 9.10999 3.71C9.23662 4.68 9.47144 5.63272 9.80999 6.55C9.94454 6.88792 9.97366 7.25863 9.8939 7.61552C9.81415 7.97242 9.62886 8.29688 9.35999 8.54L7.98999 9.91C9.41836 12.4135 11.5865 14.5817 14.09 16.01L15.46 14.64C15.7031 14.3711 16.0276 14.1858 16.3845 14.1061C16.7414 14.0263 17.1121 14.0555 17.45 14.19C18.3673 14.5286 19.32 14.7634 20.29 14.89C20.7712 14.9585 21.2088 15.2032 21.5218 15.5775C21.8348 15.9518 22.0045 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contact__info-text">
+                  <h3>Telepon</h3>
+                  <p>+62 82329319685</p>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contact__info-text">
+                  <h3>Email</h3>
+                  <p>azizymiftah@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contact__info-text">
+                  <h3>Lokasi</h3>
+                  <p>Garut, Indonesia</p>
+                </div>
+              </div>
+              <div class="contact__social">
+                <a href="#" class="contact__social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social-link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5932 15.1514 13.8416 15.5297C13.0901 15.9079 12.2385 16.0396 11.4078 15.9059C10.5771 15.7723 9.80977 15.3801 9.21484 14.7852C8.61991 14.1902 8.22773 13.4229 8.09407 12.5922C7.9604 11.7615 8.09207 10.9099 8.47033 10.1584C8.84859 9.40685 9.45419 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87659 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <form class="contact__form">
+              <div class="contact__form-group">
+                <label for="name" class="contact__form-label"></label>
+                <input type="text" id="name" class="contact__form-input" placeholder="Nama Lengkap">
+              </div>
+              <div class="contact__form-group">
+                <label for="email" class="contact__form-label"></label>
+                <input type="email" id="email" class="contact__form-input" placeholder="email@example.com">
+              </div>
+              <div class="contact__form-group">
+                <label for="subject" class="contact__form-label"></label>
+                <input type="text" id="subject" class="contact__form-input" placeholder="Subjek pesan">
+              </div>
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label"></label>
+                <textarea id="message" class="contact__form-textarea" placeholder="Tulis pesan Anda di sini..."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary contact__form-submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <span class="logo__text">Pausian<span class="accent">Math</span></span>
+            </div>
+            <p class="footer__description">
+              A new student of UPI majoring in mathematics education, class of 2025.
+            </p>
+          </div>
+          <div class="footer__links">
+            <div class="footer__links-group">
+              <h3 class="footer__links-title">Navigasi</h3>
+              <ul class="footer__links-list">
+                <li><a href="#home" class="footer__link">Beranda</a></li>
+                <li><a href="#about" class="footer__link">Tentang Saya</a></li>
+                <li><a href="#portfolio" class="footer__link">Portofolio</a></li>
+                <li><a href="#materials" class="footer__link">Materi</a></li>
+              </ul>
+            </div>
+            <div class="footer__links-group">
+              <h3 class="footer__links-title">Konten</h3>
+              <ul class="footer__links-list">
+                <li><a href="#blog" class="footer__link">Blog</a></li>
+                <li><a href="#gallery" class="footer__link">Galeri</a></li>
+                <li><a href="#contact" class="footer__link">Kontak</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            &copy; 2025 Candidate Math Educator. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.2/build/spline-viewer.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
